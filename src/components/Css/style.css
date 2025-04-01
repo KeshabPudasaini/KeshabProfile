@@ -19,15 +19,15 @@
 }
 
 .container-photograph .photo-holder {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    column-gap: 30px; /* Sets the gap between columns */
+    row-gap: 30px; /* Optional: sets gap between rows, adjust if necessary */
     padding-top: 20px;
-    gap: 30px;
-
+    justify-items: center; /* Centers the items horizontally in each column */
+    align-items: center; /* Centers the items vertically within each cell */
 }
+
 
 .container-photograph .photo-holder .photo-card {
     width: 400px;
@@ -37,6 +37,8 @@
 
 .container-photograph .photo-holder .photo-card .photo {
     width: 400px;
+    height: 30rem;
+    object-fit: cover;
     border-radius: 10px;
 
     scale: 1;
