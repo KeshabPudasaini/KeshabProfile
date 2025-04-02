@@ -9,6 +9,7 @@ import Photo5 from "../../assets/photo5.jpg";
 import Photo6 from "../../assets/photo6.jpg";
 import Photo7 from "../../assets/photo7.JPG";
 import Photo8 from "../../assets/photo8.JPG";
+import Photo9 from "../../assets/photo9.JPG";
 import "../Css/style.css"
 
 export default function Photography() {
@@ -45,6 +46,9 @@ export default function Photography() {
           </div>
           <div className="photo-card boxImage">
             <img className="photo" src={Photo5} alt="" />
+            </div>
+            <div className="photo-card boxImage">
+            <img className="photo" src={Photo9} alt="" />
           </div>
         </div>
       </div>
